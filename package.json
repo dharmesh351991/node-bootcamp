@@ -1,0 +1,30 @@
+{
+  "name": "node-farm-products-project",
+  "version": "1.0.0",
+  "description": "Learing Node.js and creating small project using FS and HTTP module",
+  "main": "http-module.js",
+  "scripts": {
+    "start": "nodemon http-module.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharmesh351991/node-bootcamp.git"
+  },
+  "keywords": [
+    "Node.js",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Dharmesh Panchal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dharmesh351991/node-bootcamp/issues"
+  },
+  "homepage": "https://github.com/dharmesh351991/node-bootcamp#readme",
+  "dependencies": {
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

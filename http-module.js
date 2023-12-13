@@ -2,13 +2,17 @@ const http = require('http');
 const url = require('url');
 const fs = require('fs');
 const replaceProductData = require('./modules/replaceTemplate');
-/////////////////////////
+const slugify = require('slugify');
+///////////////////////////
 // SERVER
 const tempHome = fs.readFileSync(`${__dirname}/templates/farm-products/home.html`, 'utf-8');
 const productCard = fs.readFileSync(`${__dirname}/templates/farm-products/product-card.html`, 'utf-8');
 const myProduct = fs.readFileSync(`${__dirname}/templates/farm-products/product.html`, 'utf-8');
 const data = fs.readFileSync(`${__dirname}/data/products.json`, 'utf-8');
 const dataObject = JSON.parse(data);
+//slug example
+const slugs = dataObject.map((pData) => slugify(pData.productName, {'lower': true}) );
+console.log('slugs', slugs);
 const server = http.createServer((request, response) => {
     const {query, pathname} = url.parse(request.url, true);
     if( pathname === '/' || pathname === '/home' ){
