@@ -1,3 +1,0 @@
-Node.js is a cross-platform, open-source JavaScript runtime environment 
-that can run on Windows, Linux, Unix, macOS, and more.
-Furthermore, as Node. js is designed to operate asynchronously.
