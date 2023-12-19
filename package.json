@@ -1,0 +1,27 @@
+{
+  "name": "js-callback-hell",
+  "version": "1.0.0",
+  "description": "JS fundamental ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharmesh351991/node-bootcamp.git"
+  },
+  "keywords": [
+    "JS",
+    "Node.js"
+  ],
+  "author": "Dharmesh Panchal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dharmesh351991/node-bootcamp/issues"
+  },
+  "homepage": "https://github.com/dharmesh351991/node-bootcamp#readme",
+  "dependencies": {
+    "nodemon": "^3.0.2",
+    "superagent": "^8.1.2"
+  }
+}
