@@ -1,0 +1,2 @@
+console.log('[Top level code] - Welcome to the console.log 😊'); //Top level code will execute once if we load module multiple times
+module.exports = () => console.log('I am calling from module.exports ✌');
