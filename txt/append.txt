@@ -1,1 +1,0 @@
-Furthermore, as Node. js is designed to operate asynchronously.
