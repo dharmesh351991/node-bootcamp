@@ -22,6 +22,7 @@
     "define-data-property": "^1.1.1",
     "delayed-stream": "^1.0.0",
     "dezalgo": "^1.0.4",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "fast-safe-stringify": "^2.1.1",
     "fill-range": "^7.0.1",
@@ -72,7 +73,8 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "start": "nodemon app.js"
+    "start:dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production & nodemon server.js"
   },
   "repository": {
     "type": "git",
