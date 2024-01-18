@@ -5,6 +5,15 @@ const router = express.Router();
 
 //router.param('id', tourCtrl.checkProductID);
 
+router.route('/tour-states')
+    .get(tourCtrl.getTourStates);
+
+router.route('/monthly-plan/:year')
+    .get(tourCtrl.getMonthlyPlan);
+
+router.route('/top-5-tours')
+    .get(tourCtrl.aliasTopTours, tourCtrl.getTours);
+
 router.route('/')
     .get(tourCtrl.getTours)
     .post(tourCtrl.createTour);
